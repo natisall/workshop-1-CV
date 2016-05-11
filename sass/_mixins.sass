@@ -1,0 +1,32 @@
+// border-radius
+=b-ra($radius)
+	border-radius: $radius
+	-webkit-border-radius: $radius
+// box-shadow
+=b-sh($h-of, $v-off, $blur, $color)
+	box-shadow: $h-of $v-off $blur $color
+	-webkit-box-shadow: $h-of $v-off $blur $color
+// transition
+=ttion($ttime)
+	transition: $ttime
+	-ms-transition: $ttime
+	-webkit-transition: $ttime
+// spin
+=spin($deg)
+	transform: rotate($deg)
+	-ms-transform: $deg
+	-webkit-transform: $deg
+// escale
+=scale($scale)
+	transform: scale($scale)
+	-ms-transform: scale($scale)
+	-webkit-transform: scale($scale)
+
+//no parametrico
+// clearfix
+=clear-fix
+	&:after
+		content: ''
+		display: block
+		clear: both
+	

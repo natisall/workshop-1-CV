@@ -1,0 +1,338 @@
+/* CSS Document  */
+/* Project name: cv */
+/* File name: styles.css */
+/* Creation date: mayo de 2016 */
+/* Author: Natalia Salmoiraghi */
+/* Author's eMail: s.natalia94@hotmail.com */
+@import url(https://fonts.googleapis.com/css?family=Patua+One|Ubuntu:700,400);
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0; }
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+figure {
+  margin: 0;
+  line-height: 0; }
+  figure img {
+    width: 100%; }
+
+input, textarea, button {
+  border: none;
+  font-family: inherit; }
+
+/********************************* */
+/*=========     GLOBAL   ========= */
+/********************************* */
+.wrapper {
+  width: 97%;
+  max-width: 1200px;
+  margin: auto; }
+
+.subtitle {
+  text-align: center;
+  font-family: "Patua One";
+  font-size: 24px;
+  margin-top: 0; }
+  .subtitle + p {
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    padding: 0 15px; }
+
+.separator {
+  margin: auto;
+  height: 3px;
+  background-color: #A27F7F;
+  width: 45px; }
+
+#services, #portfolio, #skills, #conatct, .comunication, footer {
+  padding: 70px 0; }
+
+/********************************* */
+/*=========     HEADER   ========= */
+/********************************* */
+header {
+  padding: 15px; }
+
+.logo {
+  display: inline-block;
+  max-width: 120px; }
+
+#toggle {
+  display: none; }
+  #toggle:checked ~ nav {
+    width: 100%; }
+
+.toggle-button {
+  float: right;
+  margin-top: 50px; }
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #A27F7F;
+  width: 0;
+  height: 100vh;
+  overflow: hidden;
+  transition: 500ms;
+  -ms-transition: 500ms;
+  -webkit-transition: 500ms; }
+  nav li {
+    color: #fff;
+    border-bottom: solid 1px #fff;
+    position: relative; }
+    nav li label {
+      position: absolute;
+      right: 15px;
+      top: 15px; }
+  nav a {
+    display: block;
+    font-size: 15px;
+    padding: 15px; }
+
+/********************************* */
+/*=========     BANNER   ========= */
+/********************************* */
+.banner {
+  min-height: 550px;
+  text-align: center;
+  padding-top: 150px;
+  margin: 0 auto 0;
+  color: #fff; }
+
+/************************************** */
+/*=========     SERVICES      ========= */
+/************************************** */
+.services {
+  max-width: 1200px;
+  margin: auto; }
+  .services article {
+    margin: 40px 5% 0;
+    position: relative;
+    min-height: 90px; }
+
+.red-ball {
+  width: 60px;
+  height: 60px;
+  display: block;
+  background-color: #E21212;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: #fff;
+  font-size: 22px;
+  font-weight: lighter;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.service-text {
+  padding-left: 70px; }
+  .service-text h2 {
+    color: #A27F7F;
+    margin-top: 0;
+    font-size: 19px; }
+  .service-text p {
+    color: #A27F7F;
+    font-size: 15px; }
+
+/**************************************** */
+/*=========    Portfolio   ========= */
+/**************************************** */
+#portfolio {
+  background-color: #8a85cb; }
+
+.project-list figure {
+  margin: 40px 5% 0;
+  box-shadow: 0 0 10px #333;
+  -webkit-box-shadow: 0 0 10px #333;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  overflow: hidden;
+  position: relative; }
+  .project-list figure div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 600ms;
+    -ms-transition: 600ms;
+    -webkit-transition: 600ms; }
+    .project-list figure div:hover {
+      background-color: 0, 0, 0, 0.5; }
+      .project-list figure div:hover span {
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1); }
+    .project-list figure div span {
+      width: 40px;
+      height: 40px;
+      background-color: #E21212;
+      text-align: center;
+      line-height: 40px;
+      color: #fff;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -20px;
+      transform: scale(0);
+      -ms-transform: scale(0);
+      -webkit-transform: scale(0);
+      transition: 600ms;
+      -ms-transition: 600ms;
+      -webkit-transition: 600ms; }
+
+/****************************************** */
+/*=========    COMUNICACION: 	  ========= */
+/****************************************** */
+.social-links {
+  text-align: center; }
+  .social-links li {
+    display: inline-block;
+    margin: 15px;
+    color: #3C3780; }
+    .social-links li span {
+      display: block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 18px;
+      text-align: center;
+      margin: 0 auto 5px;
+      vertical-align: top;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      transition: 500ms;
+      -ms-transition: 500ms;
+      -webkit-transition: 500ms; }
+    .social-links li i {
+      font-style: normal;
+      font-size: 14px; }
+    .social-links li:hover span {
+      background-color: #FCBD62;
+      box-shadow: 0 0 5px #fff;
+      -webkit-box-shadow: 0 0 5px #fff; }
+
+/*********************************** */
+/*=========     CONTACT    ========= */
+/*********************************** */
+#contact {
+  margin-top: 70px; }
+  #contact form {
+    padding: 50px 30px; }
+    #contact form input, #contact form textarea {
+      display: block;
+      width: 100%;
+      height: 50px;
+      font-size: 16px;
+      margin-top: 20px;
+      background-color: transparent;
+      border-bottom: solid 2px #ddd;
+      color: #333;
+      transition: 300ms;
+      -ms-transition: 300ms;
+      -webkit-transition: 300ms; }
+      #contact form input:focus, #contact form textarea:focus {
+        border-bottom-color: #E21212;
+        color: #E21212; }
+    #contact form textarea {
+      height: 120px;
+      min-height: 120px;
+      resize: vertical;
+      overflow: hidden; }
+    #contact form .red-button {
+      font-size: 16px;
+      margin: 20px 0 0;
+      padding: 10px; }
+
+.map {
+  position: relative;
+  height: 300px; }
+  .map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none; }
+  .map div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 85%; }
+
+/********************************** */
+/*=========     FOOTER    ========= */
+/********************************** */
+footer {
+  text-align: center; }
+  footer p {
+    color: #333; }
+    footer p em {
+      color: #3C3780;
+      font-style: normal; }
+  footer a {
+    font-size: 14px; }
+
+/***************************************** */
+/*=========     MEDIA-QUERIES    ========= */
+/***************************************** */
+@media (min-width: 560px) {
+  .project-list figure {
+    display: inline-block;
+    margin: 15px 7.3%;
+    width: 35%; } }
+@media (min-width: 800px) {
+  .separator {
+    width: 260px; }
+
+  .banner h1 {
+    font-size: 45px; }
+  .banner p {
+    font-size: 20px; }
+
+  .services:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .services article {
+    float: left;
+    margin: 40px 2.5% 0;
+    width: 40%; }
+
+  .project-list figure {
+    display: inline-block;
+    margin: 15px 5%;
+    width: 22%; } }
+@media (min-width: 1100px) {
+  #contact:after {
+    content: "";
+    display: block;
+    clear: both; }
+  #contact form {
+    width: 50%;
+    float: right; }
+
+  .map {
+    display: inline-block;
+    width: 50%; }
+    .map iframe {
+      height: 590px; } }
+
+/*# sourceMappingURL=styles.css.map */
